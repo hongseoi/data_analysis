@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <body>
+        <form>
+            <fieldset>
+                <legend>납품자 정보</legend>
+                <p>1. 납품자명: <input type="text" name="user"></p>
+                <p>2. email: <input type="text" name="email" placeholder="anser@naver.com"></p>
+                <p>3. 홈페이지: <input type="text" name="homepage" value="https://"></p>
+                <p>4. 지역:
+                    <select name="food">
+                        <option value="1" selected>서울</option>
+                        <option value="2">충청도</option>
+                        <option value="3">경상도</option>
+                        <option value="3">전라도</option>
+
+                    </select>
+                    </p>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>납품 정보</legend>
+                <ul>
+                    <li><label>상품명:</label> <input type="text" name="order"></li>
+                    <p></p>
+                    <li>납품수량: <input type="text" name="volume" placeholder="최소 100"></li>
+                    <p></p>
+                    <li>납품등급: <input type="range" name="grade" min="0" max="10"></li>
+                    <p></p>
+                    <li>기타사항: <textarea rows="5" cols="30"></textarea></li>
+
+                </ul>
+            </fieldset>
+        </form>
+        
+        <p><input type="submit" value="send message"></p>
+
+    </body>
+</html>

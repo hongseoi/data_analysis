@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            input#user:focus{
+                background-color: skyblue;
+            }
+            input#phone:focus{
+                background-color: greenyellow;
+            }
+            input#email:focus{
+                background-color: darkkhaki;
+            }
+            input[type='radio']:checked{
+                width: 1.5em;
+                height: 1.5em;
+                border: 1px;
+            }
+            input[type='checkbox']:checked{
+                width: 1.5em;
+                height: 1.5em;
+                border: 1px;
+            }
+            input#order:focus{
+                background-color: black;
+            }
+
+            <!--fieldset 마우스 커서 이동시 색상 변경-->
+            fieldset:hover { background-color: aqua;}            
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>고객명: <input type="text" name="user" id="user"></p>
+            <p>전화번호: <input type="text" name="user" id="phone"></p>
+            <p>e-mail: <input type="text" name="user" id="email"></p>
+        </form>
+
+        <form>
+            피자선택:
+            <select name="food">
+                <option value="1" selected>피자를 선택하세요</option>
+                <option value="2">맛있는피자</option>
+                <option value="3">맛없는피자</option>
+            </select>
+        </form>
+            <fieldset class="f1">
+                <legend>피자사이즈</legend>
+                <p><input type="radio" name="size" value="small">small</p>
+                <p><input type="radio" name="size" value="medium">medium</p>
+                <p><input type="radio" name="size" value="Large">Large</p>
+                <p><input type="radio" name="size" value="Extra">Extra large</p>
+            </fieldset>
+            <fieldset>
+                <legend>토핑 선택</legend>
+                <p><input type="checkbox" name="top" value="bacon">베이컨</p>
+                <p><input type="checkbox" name="top" value="cheese">치즈</p>
+                <p><input type="checkbox" name="top" value="onion">양파</p>
+                <p><input type="checkbox" name="top" value="mushroom">버섯</p>
+            </fieldset>
+        
+        <p>희망배송시간: <input type="time" name="time"></p>
+        <p>배송시 요청사항: <textarea rows="5" cols="30"></textarea></p>
+        <p><input type="submit" value="주문하기" id="order"></p>
+
+    </body>
+</html>
